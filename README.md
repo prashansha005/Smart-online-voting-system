@@ -239,6 +239,14 @@ Protected endpoints use the `Authorization: Bearer <token>` header.
 
 ![Smart Online Voting System registration screen](docs/screenshots/registration.png)
 
+### Administrator Dashboard
+
+![Smart Online Voting System administrator dashboard](docs/screenshots/admin-dashboard.png)
+
+### Voter Dashboard
+
+![Smart Online Voting System voter dashboard](docs/screenshots/voter-dashboard.png)
+
 ## Troubleshooting
 
 - **MongoDB connection fails:** confirm MongoDB is running or reachable and check `MONGO_URI` in your private `backend/.env`.
