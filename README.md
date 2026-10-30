@@ -231,14 +231,13 @@ Protected endpoints use the `Authorization: Bearer <token>` header.
 
 ## Screenshots
 
-Screenshots are not included in this repository yet. Suggested captures for the project report are:
+### Login
 
-- Login and registration screens.
-- Administrator dashboard and election creation form.
-- Voter dashboard and ballot selection screen.
-- Election results with synthetic demonstration data.
+![Smart Online Voting System login screen](docs/screenshots/login.png)
 
-When adding screenshots, place them in `docs/screenshots/` and link them here after checking that they contain no personal information, live access codes, credentials, or tokens.
+### Registration
+
+![Smart Online Voting System registration screen](docs/screenshots/registration.png)
 
 ## Troubleshooting
 
