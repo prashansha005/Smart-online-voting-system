@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.navbar {
+  background: #17325c;
+  color: white;
+  min-height: 64px;
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.page-container {
+  width: min(1100px, 92%);
+  margin: 30px auto 60px;
+}
+
+.auth-card,
+.card,
+.summary-box,
+.position-box {
+  background: white;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.auth-card {
+  width: min(460px, 100%);
+  margin: 45px auto;
+}
+
+.card {
+  margin-bottom: 18px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.page-header,
+.row-between,
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-header {
+  margin-bottom: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 13px 0 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #b7c0cc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  background: #1d4ed8;
+  color: white;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #182235;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.light-button {
+  background: white;
+  color: #17325c;
+}
+
+.text-button {
+  border: none;
+  background: transparent;
+  color: #1d4ed8;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.full {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.small-button {
+  padding: 8px 10px;
+}
+
+.muted {
+  color: #667085;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.message {
+  padding: 11px 13px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.message.success,
+.message:not(.error) {
+  background: #ecfdf3;
+  border: 1px solid #a7f3d0;
+}
+
+.message.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.position-box {
+  margin: 18px 0;
+  background: #f8fafc;
+}
+
+.candidate-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.status {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #e5e7eb;
+}
+
+.status.active {
+  background: #dcfce7;
+}
+
+.status.upcoming {
+  background: #dbeafe;
+}
+
+.status.closed {
+  background: #e5e7eb;
+}
+
+.code {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ballot-position {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 18px;
+  margin-top: 18px;
+}
+
+.radio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #d8dee8;
+  border-radius: 7px;
+  padding: 12px;
+  margin: 9px 0;
+  cursor: pointer;
+}
+
+.radio-card input {
+  width: auto;
+  margin-top: 3px;
+}
+
+.radio-card small {
+  display: block;
+  margin-top: 4px;
+  color: #667085;
+}
+
+.already-voted {
+  background: #ecfdf3;
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.summary-box {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f8fafc;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 24px 0;
+}
+
+@media (max-width: 700px) {
+  .navbar,
+  .page-header,
+  .row-between,
+  .button-row,
+  .nav-right {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .two-columns,
+  .candidate-row {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+}
